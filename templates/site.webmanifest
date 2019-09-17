@@ -1,0 +1,11 @@
+{
+  "short_name": "",
+  "name": "",
+  "icons": [{
+    "src": "palette.png",
+    "type": "image/png"
+  }],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#fafafa",
+  "theme_color": "#fafafa"
+}

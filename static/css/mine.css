@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap');
+body {
+    font-family: 'Share Tech Mono', monospace;
+    background-color: black;
+    color: rgb(255, 228, 196);
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    /* height: 100vh; */
+}
+
+.these a {
+    background-image: none;
+}
+ 
+
+a, a:link, .a1 {
+    /* text-decoration: none; */
+    color: rgb(12, 219, 219) !important; 
+    /* padding-top: 4rem; */
+    /* display: inline-block; */
+    /* color: #111; */
+    /* width: 120%; */
+    padding: 0;
+    text-decoration: none;
+    background-image: linear-gradient( transparent 0%, transparent calc(50% - 13px), rgba(255, 0, 127, 0.35) calc(50% - 7px), rgba(255, 0, 127, 0.35) 100% );
+    transition: background-position 120ms ease-in-out, padding 120ms ease-in-out;
+    /* background-size: 110% 200%; */
+    /* background-position: 0 0; */
+}
+
+/* .rr {
+    border-top: 1.5px solid rgb(255, 228, 196);
+    background-origin: padding-box ;
+} */
+
+
+
+.div-1 {
+    /* display: grid; */
+    margin: 40px 100px 20px 100px;
+    /* margin: 4rem 15rem 2rem 15rem; */
+    /* background-color: rgb(213, 213, 230); */
+    background-color: rgb(1, 1, 8);
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    border: 1.5px solid #5f5c5c;
+    background-origin: padding-box ;
+    /* position: fixed;
+    bottom: 0; */
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    div.div-1 {
+        border: none;
+        margin: 0 ;
+        height: 100%;
+    }
+    .body {
+       margin: none; 
+    }
+  }
+
+
+
+/* .strikethrough {
+    position: relative;
+} */
+
+/* .strikethrough { */
+    /* text-decoration: line-through blue !important; */
+    /* border-bottom: 10px solid blue !important; */
+    /* position: absolute; */
+    /* content: attr(value)"hj"; */
+    /* width: 100%;
+    height: 50%; */
+    /* z-index: -1; */
+/* } */
+
+.inline- {
+    /* display: inline-flex; */
+    display:table-cell;
+    
+    /* height: 40px; */
+    margin-left: 0px;
+    padding: 10px;
+}
+
+.column-1 {
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 100px 200px; */
+    /* display: inline !important; */
+}
+
+.row- {
+    grid-template-rows: 100px 50px;
+}
+
+.notice {
+    
+    /* border: 5px solid rgb(149, 252, 31); */
+    border: 5px solid #5f5c5c;
+}
+
+div.footer {
+    /* width: 10em;
+    height: 10em;
+    margin: 0 auto; */
+    /* margin: 20px; */
+    text-align: center;
+    /* position: fixed; */
+    /* left: 0; */
+    bottom: 0;
+}
+
+hr.s2 {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgb(95, 92, 92), rgba(37, 139, 97, 0), rgb(95, 92, 92));
+}
+
+hr.yo {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #5f5c5c;
+    color: rgb(95, 92, 92);
+    text-align: center;
+}
+hr.yo:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: black;
+}
+
+.pad{
+    padding: 20px;
+}
+
+.raise {
+    margin: 0 !important;
+}
+
+ul.h1 {
+    display: inherit;
+    margin: 0px !important;
+}
+.sqr {
+    /* margin-top:10px; */
+    background-size: 100px 100px;
+    height: 65px !important;
+    width: 65px !important;
+    background-image: url("../img/macbook.png");
+    background-repeat: no-repeat;
+}
+.body {
+    margin: 0 70px 0 70px;
+    height: 100%;
+
+}
+
+.icon-p {
+    background-size: 25px 25px;
+    height: 25px !important;
+    width: 25px !important;
+    background-image: url("../img/py.png");
+}
+
+.icon-sep {
+    background-size: 25px 25px;
+    height: 25px !important;
+    width: 25px !important;
+    background-image: url("../img/sep.png");
+}
+.icon-j {
+    background-size: 25px 25px;
+    height: 25px !important;
+    width: 25px !important;
+    background-image: url("../img/js.png");
+}
+
+.icon-e {
+    background-size: 25px 25px;
+    height: 25px !important;
+    width: 25px !important;
+    background-image: url("../img/eth.png");
+}
+.icon-r {
+    background-size: 25px 25px;
+    height: 25px !important;
+    width: 25px !important;
+    background-image: url("../img/react.png");
+}
+
+.icon-vvg {
+    background-size: 30px 30px;
+    height: 30px !important;
+    width: 30px !important;
+    background-image: url("../img/vvg.png");
+}
+
+.icon-g {
+    background-size: 20px 20px;
+    height: 20px !important;
+    width: 25px !important;
+    background-image: url("../img/github.png");
+    background-repeat: no-repeat;
+}
+
+a.icon-g, a:link.icon-g {
+    background-image: url("../img/github.png");
+    transition: none;
+    /* background-size: 110% 200%; */
+}
+
+a.icon-t, a:link.icon-t {
+    background-image: url("../img/twitter.png");
+    transition: none;
+    /* background-size: 110% 200%; */
+}
+
+a.icon-in, a:link.icon-in {
+    background-image: url("../img/in.png");
+    transition: none;
+    /* background-size: 110% 200%; */
+}
+
+a.icon-gm, a:link.icon-gm {
+    background-image: url("../img/gmail.png");
+    transition: none;
+    /* background-size: 110% 200%; */
+}
+
+.icon-t {
+    background-size: 20px 20px;
+    height: 20px !important;
+    width: 20px !important;
+    background-image: url("../img/twitter.png");
+    background-repeat: no-repeat;
+}
+
+.icon-in {
+    background-size: 20px 20px;
+    height: 20px !important;
+    width: 20px !important;
+    background-image: url("../img/in.png");
+    background-repeat: no-repeat;
+}
+
+.icon-gm {
+    background-size: 20px 20px;
+    height: 20px !important;
+    width: 20px !important;
+    background-image: url("../img/gmail.png");
+    background-repeat: no-repeat;
+}
+
+.icon-d {
+    background-size: 20px 20px;
+    height: 20px !important;
+    width: 20px !important;
+    background-image: url("../img/dev.png");
+    background-repeat: no-repeat;
+}
+/* ul { */
+    /* background-color: yellow; */
+/* } */
+/* .line {
+    position: relative;
+    width: 110%;
+}
+.line .line-2 {
+    position: relative;
+    width: 100%;
+    z-index: -100;
+    top: -1.1rem;
+    left: 0;
+    background: #06FF61;
+    height: 1rem;
+} */
