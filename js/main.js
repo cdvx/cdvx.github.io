@@ -24,7 +24,7 @@ $(document).ready(function() {
     $(this).addClass('active');
 
     var target = this.hash,
-        menu = target;
+      menu = target;
 
     target = $(target);
     $('html, body').stop().animate({
@@ -53,7 +53,7 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    if (scroll > 200 ) {
+    if (scroll > 200) {
       $("#main-nav, #main-nav-subpage").slideDown(700);
       $("#main-nav-subpage").removeClass('subpage-nav');
     } else {
@@ -79,7 +79,7 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["Cedric.", "a Designer.", "a Developer.", "a Freelancer.", "a Data Scientist.", "an Artist."],
+      strings: ["Cedric.", "a Designer.", "a Developer.", "a Freelancer."],
       typeSpeed: 100,
       loop: true,
     });
@@ -92,14 +92,24 @@ $(document).ready(function() {
 
 
   $('.services-carousel').owlCarousel({
-      autoplay: true,
-      loop: true,
-      margin: 20,
-      dots: true,
-      nav: false,
-      responsiveClass: true,
-      responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
-    });
+    autoplay: true,
+    loop: true,
+    margin: 20,
+    dots: true,
+    nav: false,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 2
+      },
+      900: {
+        items: 4
+      }
+    }
+  });
 
   // ========================================================================= //
   //  magnificPopup
@@ -140,18 +150,20 @@ $(document).ready(function() {
 // ========================================================================= //
 //  Porfolio isotope and filter
 // ========================================================================= //
-$(window).load(function(){
+$(window).load(function() {
 
   var portfolioIsotope = $('.portfolio-container').isotope({
     itemSelector: '.portfolio-thumbnail',
     layoutMode: 'fitRows'
   });
 
-  $('#portfolio-flters li').on( 'click', function() {
+  $('#portfolio-flters li').on('click', function() {
     $("#portfolio-flters li").removeClass('filter-active');
     $(this).addClass('filter-active');
 
-    portfolioIsotope.isotope({ filter: $(this).data('filter') });
+    portfolioIsotope.isotope({
+      filter: $(this).data('filter')
+    });
   });
 
 })
